@@ -188,6 +188,7 @@ object_curl_operation_header_callback(
 		void *ptr, unsigned int size,
 		unsigned int nmemb, void *stream)
 {
+	printf("%s", (char*)ptr);
 	param_buffer_t *header_buffer = (param_buffer_t *)stream;
 	char etag[48] = {0};
 	int rcode = 0;
@@ -200,6 +201,7 @@ object_curl_operation_header_callback(
 	}
 
 	retag = sscanf(ptr, "ETag: %s", etag);
+	printf("HAHA:%s\n", etag);
 	if (retag != 0) {
 		memset(header_buffer->ptr, 0, header_buffer->allocated);
 		strncpy(header_buffer->ptr, etag, 48);

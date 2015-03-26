@@ -24,3 +24,7 @@
 # 关于作者 #
 傅海平：中国科学院计算技术研究所(haipingf@gmail.com)
 王  维：中国科院学计算技术研究所(wangwei881116@gmail.com)
+
+
+# Fork目的及用途，用于本人大三综合实训，调试此程序，并修复部分BUG
+陈宏宇：华中农业大学 计算机科学与技术（chenhongyuisbest@163.com)
